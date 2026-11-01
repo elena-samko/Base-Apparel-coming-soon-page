@@ -19,25 +19,33 @@
       <div class="main-contanier">
         <img class="hero__logo" src="./images/logo.svg" alt="base apparel" />
         <section class="hero">
-
-          <h1 class="hero__title">We're coming soon</h1>
+          <h1 class="hero__title">
+            <span class="hero__title-accent">We're</span> coming soon
+          </h1>
           <p class="hero__descprition">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
 
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <label for="email"></label
+          <form
+            action="https://echo.htmlacademy.ru/courses"
+            class="hero__form"
+            method="post"
+          >
+            <label for="email" class="vissually-hiden">Email Address</label
             ><input
-              type="text"
+              class="hero__input"
+              type="email"
               name="email"
               placeholder="Email Address"
               id="email"
               required
             />
-            <span class="vissually-hiden">Email Address</span
-            ><input class="sub-btn" type="submit" />
+
+            <button type="submit" class="hero__submit">
+              <span class="vissually-hiden">Subscribe</span>
+            </button>
           </form>
         </section>
         <img

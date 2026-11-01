@@ -21,27 +21,110 @@ body {
 
 main {
   width: 100%;
-  background: url(../images/bg-pattern-desktop.svg) center / no-repeat;
+  min-height: 100vh;
+  background: url(../images/bg-pattern-desktop.svg) center / cover no-repeat;
 }
 .main-contanier {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 445px 610px;
   grid-template-areas:
     "logo photo"
     "text photo";
+  column-gap: 220px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 165px;
 }
 
 .hero__logo {
   grid-area: logo;
+  margin: 80px 0 0 0;
 }
 .hero {
-    grid-area: text;
+  grid-area: text;
+  margin: 0 0 0 0;
+  max-width: 445px;
+  padding: 0 0 138.5px 0;
+  max-height: 414px;
 }
 
 .hero_img {
-    grid-area: photo;
-    width: 100%;
-    height: auto;
+  grid-area: photo;
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  min-width: 610px;
+}
+.hero__title {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 17.5px;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0 0 32px 0;
+  max-height: 192px;
+}
+.hero__title-accent {
+  color: #ce9898;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 17.5px;
+}
+
+.hero__descprition {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 215%;
+  color: #ce9898;
+  margin: 0px 0 32px 0;
+  letter-spacing: 0px;
+}
+
+.hero__form {
+  width: 100%;
+  max-width: 445px;
+  position: relative;
+}
+.hero__input {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  border: 1px solid #ce9898;
+  padding: 11px 110px 11px 32px;
+}
+
+.hero__input::placeholder {
+  color: #ce9898;
+}
+
+.hero__submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  background-image:
+    url("./images/icon-arrow.svg"),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 15px 20px rgba(198, 110, 108, 0.24);
+}
+
+.vissually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 /*MOBILE*/
