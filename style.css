@@ -126,5 +126,34 @@ main {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+.hero__error-icon {
+  position: absolute;
+  background: url(./images/icon-error.svg) center / contain no-repeat;
+  width: 24px;
+  height: 24px;
+  right: 110px;
+  top: 16px;
+  visibility: hidden;
+}
+.hero__input:user-invalid ~ .hero__error-icon,
+.hero__input:user-invalid ~ .hero__error-message {
+  border: 2px solid #f96464;
+  visibility: visible;
+}
+.hero__input:user-invalid ~ .hero__submit {
+  background-image:
+    url("./images/icon-arrow.svg"), linear-gradient(#ce9898, #ce9898);
+}
+
+.hero__error-message {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 215%;
+  color: #f96464;
+  position: absolute;
+  left: 32px;
+  top: 64px;
+  visibility: hidden;
+}
 
 /*MOBILE*/
