@@ -47,18 +47,26 @@
             <button type="submit" class="hero__submit">
               <span class="vissually-hiden">Subscribe</span>
             </button>
-            <span class="hero__error-message">
-  Please provide a valid email
-</span>
           </form>
         </section>
-        <img
-          class="hero_img"
-          src="./images/hero-desktop.jpg"
-          alt="Fashion photo of woman model in orange shirt"
-          width="610"
-          height="800"
-        />
+        <picture class="hero_picture">
+          <source
+            media="(max-width: 375px)"
+            srcset="./images/hero-mobile.jpg"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/hero-tablet.jpg"
+          />
+
+          <img
+            class="hero_img"
+            src="./images/hero-desktop.jpg"
+            alt="Fashion photo of woman model in orange shirt"
+            width="610"
+            height="800"
+          />
+        </picture>
       </div>
     </main>
   </body>
