@@ -149,7 +149,7 @@ main {
 
 .hero__input:user-invalid ~ .hero__submit {
   background-image:
-    url("./images/icon-arrow.svg"), linear-gradient(#ce9898, #ce9898);
+    url("../images/icon-arrow.svg"), linear-gradient(#ce9898, #ce9898);
 }
 
 .hero__error-message {
